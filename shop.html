@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NEXORA TOPUP - Top up game, e-wallet, pulsa, token listrik dan pembayaran digital.">
+  <title>NEXORA TOPUP — Game & Digital Payment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+  <div class="bg-glow glow-one"></div><div class="bg-glow glow-two"></div>
+
+  <header class="header">
+    <a href="#" class="brand"><span class="brand-icon">N</span><span>NEXORA<span class="lime">.</span></span></a>
+    <nav id="nav">
+      <a href="#home">Home</a><a href="#produk">Produk</a><a href="#pembayaran">Pembayaran</a><a href="#cara">Cara Order</a>
+    </nav>
+    <div class="header-actions">
+      <button class="theme-btn" id="themeBtn">☼</button>
+      <button class="cart-btn" id="cartBtn">🛒 <span id="cartCount">0</span></button>
+      <button class="hamburger" id="hamburger">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <div class="status"><i></i> TOP UP CEPAT • 24/7</div>
+        <h1>Top up <em>semua kebutuhan</em><br>digitalmu.</h1>
+        <p>Game, e-wallet, pulsa, token listrik, tagihan, dan layanan digital lainnya. Pilih produk, isi data, transfer, lalu kirim bukti pembayaran ke WhatsApp penjual.</p>
+        <div class="hero-buttons"><a href="#produk" class="btn primary">Mulai Belanja <b>↗</b></a><a href="#cara" class="btn secondary">Cara Order</a></div>
+        <div class="stats"><div><b>10k+</b><span>Transaksi</span></div><div><b>24/7</b><span>Layanan</span></div><div><b>Fast</b><span>Processing</span></div></div>
+      </div>
+      <div class="hero-visual">
+        <div class="ring ring-a"></div><div class="ring ring-b"></div>
+        <div class="digital-card">
+          <div class="card-top"><span>NEXORA DIGITAL</span><small>✓ VERIFIED</small></div>
+          <div class="card-chip">✦</div>
+          <strong>TOP UP<br>MADE SIMPLE.</strong>
+          <div class="card-bottom"><span>GAME • WALLET • PULSA • LAINYA</span><b>NEX</b></div>
+        </div>
+        <div class="floating f1">⚡ <span><b>Instant</b><small>Proses cepat</small></span></div>
+        <div class="floating f2">✓ <span><b>Secure</b><small>Pembayaran aman</small></span></div>
+      </div>
+    </section>
+
+    <section class="quick">
+      <div class="section-title"><div><label>LAYANAN</label><h2>Pilih kebutuhanmu</h2></div></div>
+      <div class="quick-grid">
+        <button data-jump="ewallet"><span>◉</span><b>E-Wallet</b><small>DANA • Shopepay • Ovo</small></button>
+        <button data-jump="pulsa"><span>⌁</span><b>Pulsa & Data</b><small>Semua operator</small></button>
+        <button data-jump="listrik"><span>⚡</span><b>Listrik</b><small>Token </small></button>
+        <button data-jump="voucher"><span>💳 </span><b>Voucher</b><small>Google Play • Lainnya</small></button>
+        <button data-jump="game"><span>🎮 </span><b>Game</b><small>Mobilegend • Lainnya</small></button>
+        <button data-jump="streaming"><span> 🎥  </span><b>Streaming</b><small>Spotify • Lainnya</small></button>
+        <button data-jump="aplikasi&software"><span> 👩🏻‍💻  </span><b>Aplikasi&Software</b><small>Canva • Lainnya</small></button>
+
+      </div>
+    </section>
+
+    <section class="products" id="produk">
+      <div class="section-title product-heading">
+        <div><label>CATALOG</label><h2>Produk digital populer</h2></div>
+        <div class="search"><span>⌕</span><input id="search" placeholder="Cari produk..."></div>
+      </div>
+      <div class="tabs" id="tabs">
+        <button class="active" data-filter="all">Semua</button><button data-filter="ewallet">E-Wallet</button><button data-filter="pulsa">Pulsa</button><button data-filter="listrik">Listrik</button>
+       <button data-filter="voucher">Voucher</button><button data-filter="game">Game</button><button data-filter="streaming">Streaming</button>
+       <button data-filter="aplikasi&software">aplikasi&software</button>
+      
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="empty" id="empty">Produk tidak ditemukan.</div>
+    </section>
+
+    <section class="payment-section" id="pembayaran">
+      <div><label>METODE PEMBAYARAN</label><h2>Bayar dengan cara<br>yang kamu suka.</h2><p>Setelah memilih produk, pembeli akan mendapatkan instruksi pembayaran. Transfer sesuai nominal, simpan bukti, lalu kirim bukti transfer melalui WhatsApp penjual.</p></div>
+      <div class="payment-grid">
+        <div class="pay-card"><span class="pay-icon qris">▦</span><h3>QRIS</h3><p>Scan QRIS penjual</p><b id="qrisLabel">QRIS NEXORA</b></div>
+        <div class="pay-card"><span class="pay-icon dana">D</span><h3>E-Wallet</h3><p>DANA / Shopepay/Gopay/Ovo</p><b id="walletLabel">08xx-xxxx-xxxx</b></div>
+        <div class="pay-card"><span class="pay-icon bank">▤</span><h3>Bank Transfer</h3><p>BCA / BRI / Mandiri / BNI</p><b id="bankLabel">XXXX XXXX XXXX</b></div>
+      </div>
+    </section>
+
+    <section class="steps" id="cara">/
+      <div class="section-title centered"><label>ORDER PROCESS</label><h2>Cara order di NEXORA</h2></div>
+      <div class="step-grid">
+                <article><span>01</span><i>🛍</i><h3>Pilih produk</h3><p>Pilih game, e-wallet, pulsa, token atau layanan lainnya.</p></article>
+        <article><span>02</span><i>📝</i><h3>Isi data pembeli</h3><p>Masukkan nama, WhatsApp, Gmail, dan detail tujuan top up.</p></article>
+        <article><span>03</span><i>💳</i><h3>Transfer pembayaran</h3><p>Bayar melalui QRIS, e-wallet atau bank sesuai instruksi.</p></article>
+        <article><span>04</span><i>📲</i><h3>Kirim ke WhatsApp</h3><p>Kirim pesanan dan bukti transfer ke WhatsApp penjual.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="footer-brand"><span class="brand-icon">N</span><b>NEXORA.</b><p>Digital made effortless.</p></div><div class="footer-note">© 2026 NEXORA TOPUP • Frontend Store</div></footer>
+
+  <!-- CART -->
+  <aside class="drawer" id="drawer">
+    <div class="drawer-head"><h2>Keranjang</h2><button id="closeCart">×</button></div>
+    <div id="cartList"></div>
+    <div class="drawer-total"><span>Total</span><b id="cartTotal">Rp0</b></div>
+    <button class="btn primary full" id="orderBtn">Pesan Sekarang <b>↗</b></button>
+  </aside>
+
+  <!-- CHECKOUT -->
+  <div class="modal-bg" id="modalBg">
+    <div class="checkout">
+      <button class="modal-close" id="modalClose">×</button>
+      <div id="checkoutContent"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="shop.js"></script>
+</body>
+</html>
